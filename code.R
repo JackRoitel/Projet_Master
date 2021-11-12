@@ -8,6 +8,9 @@ head(data)
 
 data = as.data.frame(data)
 
+#==============================Focus sur la ville de Bern =====================================
+#==============================================================================================
+
 data_bern = subset(data, station == "BER", select = c(station, datetime, U_10M_mean, V_10M_mean, U_10M, V_10M, u10, v10))
 head(data_bern)
 
